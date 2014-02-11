@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdm:sourceDeviceMapping
+	xmlns:sdm="http://elite.polito.it/xml/schema/sourceDeviceMapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://elite.polito.it/xml/schema/sourceDeviceMapping ../../../StreamProcessingBlocks - Addons/spec/xml/sourceDeviceMapping.xsd ">
+
+	<!-- AEON Labs HEM -->
+
+	<sdm:sensor sensorQFParams="" sensorQFunctionality="SinglePhaseActivePowerMeasurementNotification"
+		sensorURI="AEON_HEM" uid="AEON_HEM" />
+	
+	<!--  Temperrature sensor -->
+	<sdm:sensor sensorQFParams="" sensorQFunctionality="TemperatureMeasurementNotification"
+		sensorURI="TemperatureAndHumiditySensor_76" uid="Temperature_ths_76" />
+	<sdm:sensor sensorQFParams="" sensorQFunctionality="HumidityMeasurementNotification"
+		sensorURI="TemperatureAndHumiditySensor_76" uid="Humidity_ths_76" />
+</sdm:sourceDeviceMapping>
