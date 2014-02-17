@@ -32,18 +32,29 @@
 			<spXML:input blockId="scale_H_THS76" id="scale_H_THS76_in" port="in" />
 			<spXML:output blockId="scale_H_THS76" id="scale_H_THS76_out" port="out" />
 		</spXML:chain>
+		<spXML:chain id="Movement_78" name="Movement_78" lastModified="2012-06-28T10:42:00">
+			<spXML:blocks>
+				<spXML:block function="SCALE" id="scale_Movement_78" name="scale_Movement_78">
+					<spXML:param name="scale" value="1.0" />
+				</spXML:block>
+			</spXML:blocks>
+			<spXML:input blockId="scale_Movement_78" id="scale_Movement_78_in" port="in" />
+			<spXML:output blockId="scale_Movement_78" id="scale_Movement_78_out" port="out" />
+		</spXML:chain>
 	</spConfig:chains>
 	<spConfig:eventSources>
 		<!-- moxa 1 -->
 		<spConfig:eventStream id="AEON_HEM" type="REAL" />
 		<spConfig:eventStream id="Temperature_ths_76" type="REAL" />
 		<spConfig:eventStream id="Humidity_ths_76" type="REAL" />
+		<spConfig:eventStream id="MovementSensor_78_raw" type="REAL" />
 	</spConfig:eventSources>
 	<spConfig:eventDrains>
 		<!-- cosm outlet -->
 		<spConfig:eventStream id="AEON_LABS_HEM_OFFICE" type="REAL" />
 		<spConfig:eventStream id="TEMPERATURE_OFFICE" type="REAL" />
 		<spConfig:eventStream id="HUMIDITY_OFFICE" type="REAL" />
+		<spConfig:eventStream id="MOVEMENT_OFFICE" type="REAL" />
 	</spConfig:eventDrains>
 	<spConfig:connections>
 		<spConfig:connection>
@@ -60,6 +71,11 @@
 			<spConfig:fromSource chainId="H_THS76" inputId="scale_H_THS76_in" source="Humidity_ths_76" />
 			<spConfig:toDrain chainId="H_THS76" drain="HUMIDITY_OFFICE"
 				outputId="scale_H_THS76_out" />
+		</spConfig:connection>
+		<spConfig:connection>
+			<spConfig:fromSource chainId="Movement_78" inputId="scale_Movement_78_in" source="MovementSensor_78_raw" />
+			<spConfig:toDrain chainId="Movement_78" drain="MOVEMENT_OFFICE"
+				outputId="scale_Movement_78_out" />
 		</spConfig:connection>
 	</spConfig:connections>
 </spConfig:streamProcessingConfiguration>
