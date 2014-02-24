@@ -7,17 +7,17 @@
 	<!-- AEON Labs HEM -->
 
 	<sdm:sensor sensorQFParams="" sensorQFunctionality="SinglePhaseActivePowerMeasurementNotification"
-		sensorURI="AEON_HEM" uid="AEON_LABS_HEM_OFFICE" />
+		sensorURI="AEON_HEM" uid="AEON_HEM" />
 	
 	<!--  Temperature sensor -->
 	<sdm:sensor sensorQFParams="" sensorQFunctionality="TemperatureMeasurementNotification"
-		sensorURI="TemperatureAndHumiditySensor_76" uid="TEMPERATURE_OFFICE" />
+		sensorURI="TemperatureAndHumiditySensor_76" uid="Temperature_ths_76" />
 	<sdm:sensor sensorQFParams="" sensorQFunctionality="HumidityMeasurementNotification"
-		sensorURI="TemperatureAndHumiditySensor_76" uid="HUMIDITY_OFFICE" />
+		sensorURI="TemperatureAndHumiditySensor_76" uid="Humidity_ths_76" />
 		
 	<!-- Movement Sensor -->
 	<sdm:sensor sensorQFParams="" sensorQFunctionality="MovementDetectedNotification"
-		sensorURI="MovementSensor_78" uid="MOVEMENT_OFFICE" />
+		sensorURI="MovementSensor_78" uid="MovementSensor_78_raw" />
 		<sdm:sensor sensorQFParams="" sensorQFunctionality="MovementCeasedNotification"
-		sensorURI="MovementSensor_78" uid="MOVEMENT_OFFICE" />
+		sensorURI="MovementSensor_78" uid="MovementSensor_78_raw" />
 </sdm:sourceDeviceMapping>
