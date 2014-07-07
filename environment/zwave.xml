@@ -16,7 +16,7 @@
             <dhc:description>The ZWave X gateway
 			</dhc:description>
             <dhc:isIn>demo_room</dhc:isIn>
-            <dhc:param name="NodeID" value="1" type="network"/>
+            <dhc:param name="nodeId" value="1" type="network"/>
             <dhc:controlFunctionality class="AssociateFunctionality">
                 <dhc:commands>
                     <dhc:command class="AssociateCommand" name="AssociateCommand_zwave-gateway" id="AssociateCommand_zwave-gateway">
@@ -45,8 +45,8 @@
 				MainsPowerOutlet_ZW1
 			</dhc:description>
             <dhc:isIn>demo_room</dhc:isIn>
-            <dhc:param name="NodeID" value="4" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="4" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:controlFunctionality class="OnOffFunctionality">
                 <dhc:commands>
                     <dhc:command class="OffCommand" name="OffCommand_Lamp_Holder" id="OffCommand_Lamp_Holder">
@@ -79,9 +79,9 @@
         <dhc:device class="SinglePhaseElectricityMeter" id="AEON_HEM" domoticSystem="ZWave" gateway="zwave-gateway">
             <dhc:description>The Aeon Labs Home Energy Meter</dhc:description>
             <dhc:isIn>demo_room</dhc:isIn>
-            <dhc:param name="NodeID" value="7" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
-            <dhc:param name="InstanceID" value="1" type="network"/>
+            <dhc:param name="nodeId" value="7" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
+            <dhc:param name="instanceId" value="1" type="network"/>
             <dhc:controlFunctionality class="SinglePhaseActivePowerMeasurementFunctionality">
                 <dhc:commands>
                     <dhc:command class="Get1PhaseActivePowerCommand" name="Get1PhaseActivePowerCommand_AEON_HEM" id="Get1PhaseActivePowerCommand_AEON_HEM">
@@ -133,8 +133,8 @@
             <dhc:description>Danfoss Thermostatic Radiator Valve
 			</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="21" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="21" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:controlFunctionality class="ClimateScheduleFunctionality">
                 <dhc:commands>
                     <dhc:command class="SetClimateScheduleCommand" name="SetClimateScheduleCommand_ThermostaticRadiatorValve_1" id="SetClimateScheduleCommand_ThermostaticRadiatorValve_1">
@@ -236,8 +236,8 @@
         <dhc:device class="DoorSensor" id="ZW_DoorWindowSensor_DoorSensor_29" domoticSystem="ZWave" gateway="zwave-gateway">
             <dhc:description>New Device of type DoorSensor</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="29" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="29" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:notificationFunctionality class="OpenCloseNotificationFunctionality">
                 <dhc:notifications>
                     <dhc:notification class="CloseNotification" id="CloseNotification_DoorSensor_29">
@@ -260,8 +260,8 @@
         <dhc:device class="MovementSensor" id="MovementSensor_30" domoticSystem="ZWave" gateway="zwave-gateway">
             <dhc:description>New Device of type MovementSensor</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="30" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="30" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:notificationFunctionality class="MovementNotificationFunctionality">
                 <dhc:notifications>
                     <dhc:notification class="MovementCeasedNotification" id="MovementCeasedNotification_MovementSensor_30">
@@ -285,8 +285,8 @@
             <dhc:description>New Device of type ThermostaticRadiatorValve
 			</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="32" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="32" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:controlFunctionality class="ClimateScheduleFunctionality">
                 <dhc:commands>
                     <dhc:command class="SetClimateScheduleCommand" name="SetClimateScheduleCommand_ThermostaticRadiatorValve_32" id="SetClimateScheduleCommand_ThermostaticRadiatorValve_32">
@@ -389,8 +389,8 @@
             <dhc:description>New Device of type
 				EnergyAndPowerMeteringLevelControllableOutput</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="74" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="74" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:controlFunctionality class="OnOffFunctionality">
                 <dhc:commands>
                     <dhc:command class="OffCommand" name="OffCommand_EnergyAndPowerMeteringLevelControllableOutput_74" id="OffCommand_EnergyAndPowerMeteringLevelControllableOutput_74">
@@ -507,8 +507,8 @@
             <dhc:description>New Device of type MeteringPowerOutlet
 			</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="75" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="75" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:controlFunctionality class="OnOffFunctionality">
                 <dhc:commands>
                     <dhc:command class="OffCommand" name="OffCommand_MeteringPowerOutlet_75" id="OffCommand_MeteringPowerOutlet_75">
@@ -588,10 +588,10 @@
             <dhc:description>New Device of type TemperatureAndHumiditySensor
 			</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="76" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
-            <dhc:param name="InstanceID" value="1" type="network"/>
-            <dhc:param name="InstanceID" value="2" type="network"/>
+            <dhc:param name="nodeId" value="76" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
+            <dhc:param name="instanceId" value="1" type="network"/>
+            <dhc:param name="instanceId" value="2" type="network"/>
             <dhc:controlFunctionality class="TemperatureMeasurementFunctionality">
                 <dhc:commands>
                     <dhc:command class="GetTemperatureCommand" name="GetTemperatureCommand_TemperatureAndHumiditySensor_76" id="GetTemperatureCommand_TemperatureAndHumiditySensor_76">
@@ -642,8 +642,8 @@
         <dhc:device class="MovementSensor" id="MovementSensor_78" domoticSystem="ZWave" gateway="zwave-gateway">
             <dhc:description>New Device of type MovementSensor</dhc:description>
             <dhc:isIn></dhc:isIn>
-            <dhc:param name="NodeID" value="78" type="network"/>
-            <dhc:param name="InstanceID" value="0" type="network"/>
+            <dhc:param name="nodeId" value="78" type="network"/>
+            <dhc:param name="instanceId" value="0" type="network"/>
             <dhc:notificationFunctionality class="MovementNotificationFunctionality">
                 <dhc:notifications>
                     <dhc:notification class="MovementCeasedNotification" id="MovementCeasedNotification_MovementSensor_78">
