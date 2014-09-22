@@ -103,7 +103,7 @@
                     <dhc:notification class="SinglePhaseActivePowerMeasurementNotification" id="SinglePhaseActivePowerMeasurementNotification_AEON_HEM">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="newActivePowerValue"/>
-                        <dhc:param name="unitOfMeasure" value="W"/>
+                        <dhc:param name="measuredIn" value="W"/>
                         <dhc:param name="notificationParamName" value="value" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
@@ -113,7 +113,7 @@
                     <dhc:notification class="SinglePhaseActiveEnergyMeasurementNotification" id="SinglePhaseActiveEnergyMeasurementNotification_AEON_HEM">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="newActiveEnergyValue"/>
-                        <dhc:param name="unitOfMeasure" value="kWh"/>
+                        <dhc:param name="measuredIn" value="kWh"/>
                         <dhc:param name="notificationParamName" value="value" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
@@ -420,6 +420,7 @@
                 <dhc:commands>
                     <dhc:command class="Get1PhaseActivePowerCommand" name="Get1PhaseActivePowerCommand_EnergyAndPowerMeteringLevelControllableOutput_74" id="Get1PhaseActivePowerCommand_EnergyAndPowerMeteringLevelControllableOutput_74">
                         <dhc:param name="realCommandName" value="getActivePower"/>
+                        <dhc:param name="measuredIn" value="W"/>
                         <dhc:param name="returnType" value="Measure"/>
                     </dhc:command>
                 </dhc:commands>
@@ -428,6 +429,7 @@
                 <dhc:commands>
                     <dhc:command class="Get1PhaseActiveEnergyCommand" name="Get1PhaseActiveEnergyCommand_EnergyAndPowerMeteringLevelControllableOutput_74" id="Get1PhaseActiveEnergyCommand_EnergyAndPowerMeteringLevelControllableOutput_74">
                         <dhc:param name="realCommandName" value="getActiveEnergyValue"/>
+                        <dhc:param name="measuredIn" value="Wh"/>
                         <dhc:param name="returnType" value="Measure"/>
                     </dhc:command>
                 </dhc:commands>
@@ -466,7 +468,7 @@
                     <dhc:notification class="SinglePhaseActivePowerMeasurementNotification">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="newActivePowerValue"/>
-                        <dhc:param name="unitOfMeasure" value="W"/>
+                        <dhc:param name="measuredIn" value="W"/>
                         <dhc:param name="notificationParamName" value="value" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
@@ -476,7 +478,7 @@
                     <dhc:notification class="SinglePhaseActiveEnergyMeasurementNotification">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="newActiveEnergyValue"/>
-                        <dhc:param name="unitOfMeasure" value="Wh"/>
+                        <dhc:param name="measuredIn" value="Wh"/>
                         <dhc:param name="notificationParamName" value="value" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
@@ -552,7 +554,7 @@
                     <dhc:notification class="SinglePhaseActivePowerMeasurementNotification">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="newActivePowerValue"/>
-                        <dhc:param name="unitOfMeasure" value="W"/>
+                        <dhc:param name="measuredIn" value="W"/>
                         <dhc:param name="notificationParamName" value="value" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
@@ -562,7 +564,7 @@
                     <dhc:notification class="SinglePhaseActiveEnergyMeasurementNotification">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="newActiveEnergyValue"/>
-                        <dhc:param name="unitOfMeasure" value="Wh"/>
+                        <dhc:param name="measuredIn" value="Wh"/>
                         <dhc:param name="notificationParamName" value="value" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
@@ -613,7 +615,7 @@
                     <dhc:notification class="TemperatureMeasurementNotification" id="TemperatureMeasurementNotification_TemperatureAndHumiditySensor_76">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="newTemperatureValue"/>
-                        <dhc:param name="unitOfMeasure" value="C"/>
+                        <dhc:param name="measuredIn" value="C"/>
                         <dhc:param name="notificationParamName" value="temperatureValue" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
@@ -623,7 +625,7 @@
                     <dhc:notification class="HumidityMeasurementNotification" id="HumidityMeasurementNotification_TemperatureAndHumiditySensor_76">
                         <dhc:param name="nParams" value="2"/>
                         <dhc:param name="notificationName" value="changedRelativeHumidity"/>
-                        <dhc:param name="unitOfMeasure" value="%"/>
+                        <dhc:param name="measuredIn" value="%"/>
                         <dhc:param name="notificationParamName" value="relativeHumidity" type="Measure"/>
                     </dhc:notification>
                 </dhc:notifications>
